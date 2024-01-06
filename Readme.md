@@ -1,7 +1,7 @@
 # Проект «Большое путешествие»
 
 * Студент: [Артур Олмасов](https://up.htmlacademy.ru/ecmascript/22/user/2163157).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов] (https://htmlacademy.ru/profile/joker).
 
 ---
 
