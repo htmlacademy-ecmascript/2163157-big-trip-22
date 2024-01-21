@@ -31,7 +31,7 @@ function createFiltersView() {
 </div>`;
 }
 
-export default class FiltersView {
+export default class FilterView {
   getFiltersTemplate() {
     return createFiltersView();
   }

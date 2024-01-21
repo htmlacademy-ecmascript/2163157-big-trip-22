@@ -40,7 +40,7 @@ function createPointView() {
 </li>`;
 }
 
-export default class FiltersView {
+export default class PointView {
   getFiltersTemplate() {
     return createPointView();
   }
