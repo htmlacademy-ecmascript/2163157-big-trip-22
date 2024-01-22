@@ -1,4 +1,4 @@
-import { createElement } from '../render';
+import { createElement } from '../render.js';
 
 function createFiltersView() {
   return `<div class="trip-main__trip-controls  trip-controls">
@@ -32,13 +32,13 @@ function createFiltersView() {
 }
 
 export default class FilterView {
-  getFiltersTemplate() {
+  getTemplate() {
     return createFiltersView();
   }
 
-  getFiltersElement() {
+  getElement() {
     if(!this.element) {
-      this.element = createElement(this.getFiltersTemplate());
+      this.element = createElement(this.getTemplate());
     }
     return this.element;
   }

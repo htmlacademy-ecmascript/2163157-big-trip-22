@@ -41,13 +41,13 @@ function createPointView() {
 }
 
 export default class PointView {
-  getFiltersTemplate() {
+  getTemplate() {
     return createPointView();
   }
 
-  getPointElement() {
+  getElement() {
     if(!this.element) {
-      this.element = createElement(this.getPointTemplate());
+      this.element = createElement(this.getTemplate());
     }
     return this.element;
   }

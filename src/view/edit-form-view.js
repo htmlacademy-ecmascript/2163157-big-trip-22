@@ -1,4 +1,4 @@
-import { createElement } from '../render';
+import { createElement } from '../render.js';
 
 function editFormView() {
   return `<li class="trip-events__item">
@@ -139,13 +139,13 @@ function editFormView() {
 }
 
 export default class EditFormView {
-  editFormTemplate() {
+  getTemplate() {
     return editFormView();
   }
 
-  editFormElement() {
+  getElement() {
     if(!this.element) {
-      this.element = createElement(this.editFormTemplate());
+      this.element = createElement(this.getTemplate());
     }
     return this.element;
   }

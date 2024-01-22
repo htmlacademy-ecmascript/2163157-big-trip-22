@@ -1,4 +1,4 @@
-import { createElement } from '../render';
+import { createElement } from '../render.js';
 
 function createNewFormView() {
   return `<li class="trip-events__item">
@@ -145,13 +145,13 @@ function createNewFormView() {
 }
 
 export default class CreateNewFormView {
-  getNewFormTemplate() {
+  getTemplate() {
     return createNewFormView();
   }
 
-  getNewFormElement() {
+  getElement() {
     if(!this.element) {
-      this.element = createElement(this.getSortTemplate());
+      this.element = createElement(this.getTemplate());
     }
     return this.element;
   }

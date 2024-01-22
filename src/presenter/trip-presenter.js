@@ -5,7 +5,7 @@ import EditFormView from '../view/edit-form-view.js';
 import FilterView from '../view/filter-view.js';
 import PointView from '../view/point-view.js';
 
-export default class ComponentsPresenter {
+export default class TripPresenter {
   pointComponent = new PointView();
 
   constructor({eventsContainer}) {
