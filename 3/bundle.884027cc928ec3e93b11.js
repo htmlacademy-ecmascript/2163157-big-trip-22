@@ -2,15 +2,15 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/presenter/render-presenter.js":
-/*!*******************************************!*\
-  !*** ./src/presenter/render-presenter.js ***!
-  \*******************************************/
+/***/ "./src/presenter/trip-presenter.js":
+/*!*****************************************!*\
+  !*** ./src/presenter/trip-presenter.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ ComponentsPresenter)
+/* harmony export */   "default": () => (/* binding */ TripPresenter)
 /* harmony export */ });
 /* harmony import */ var _render_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render.js */ "./src/render.js");
 /* harmony import */ var _view_sort_view_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../view/sort-view.js */ "./src/view/sort-view.js");
@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class ComponentsPresenter {
+class TripPresenter {
   pointComponent = new _view_point_view_js__WEBPACK_IMPORTED_MODULE_5__["default"]();
   constructor({
     eventsContainer
@@ -85,7 +85,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ CreateNewFormView)
 /* harmony export */ });
-/* harmony import */ var _render__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render */ "./src/render.js");
+/* harmony import */ var _render_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render.js */ "./src/render.js");
 
 function createNewFormView() {
   return `<li class="trip-events__item">
@@ -231,12 +231,12 @@ function createNewFormView() {
 </li>`;
 }
 class CreateNewFormView {
-  getNewFormTemplate() {
+  getTemplate() {
     return createNewFormView();
   }
-  getNewFormElement() {
+  getElement() {
     if (!this.element) {
-      this.element = (0,_render__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.getSortTemplate());
+      this.element = (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.getTemplate());
     }
     return this.element;
   }
@@ -254,7 +254,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ EditFormView)
 /* harmony export */ });
-/* harmony import */ var _render__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render */ "./src/render.js");
+/* harmony import */ var _render_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render.js */ "./src/render.js");
 
 function editFormView() {
   return `<li class="trip-events__item">
@@ -394,12 +394,12 @@ function editFormView() {
 </li>`;
 }
 class EditFormView {
-  editFormTemplate() {
+  getTemplate() {
     return editFormView();
   }
-  editFormElement() {
+  getElement() {
     if (!this.element) {
-      this.element = (0,_render__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.editFormTemplate());
+      this.element = (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.getTemplate());
     }
     return this.element;
   }
@@ -417,7 +417,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ FilterView)
 /* harmony export */ });
-/* harmony import */ var _render__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render */ "./src/render.js");
+/* harmony import */ var _render_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render.js */ "./src/render.js");
 
 function createFiltersView() {
   return `<div class="trip-main__trip-controls  trip-controls">
@@ -450,12 +450,12 @@ function createFiltersView() {
 </div>`;
 }
 class FilterView {
-  getFiltersTemplate() {
+  getTemplate() {
     return createFiltersView();
   }
-  getFiltersElement() {
+  getElement() {
     if (!this.element) {
-      this.element = (0,_render__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.getFiltersTemplate());
+      this.element = (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.getTemplate());
     }
     return this.element;
   }
@@ -515,12 +515,12 @@ function createPointView() {
 </li>`;
 }
 class PointView {
-  getFiltersTemplate() {
+  getTemplate() {
     return createPointView();
   }
-  getPointElement() {
+  getElement() {
     if (!this.element) {
-      this.element = (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.getPointTemplate());
+      this.element = (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.getTemplate());
     }
     return this.element;
   }
@@ -538,7 +538,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ SortView)
 /* harmony export */ });
-/* harmony import */ var _render__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render */ "./src/render.js");
+/* harmony import */ var _render_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render.js */ "./src/render.js");
 
 function createSortView() {
   return `<form class="trip-events__trip-sort  trip-sort" action="#" method="get">
@@ -565,12 +565,12 @@ function createSortView() {
 </form>`;
 }
 class SortView {
-  getSortTemplate() {
+  getTemplate() {
     return createSortView();
   }
-  getSortElement() {
+  getElement() {
     if (!this.element) {
-      this.element = (0,_render__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.getSortTemplate());
+      this.element = (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.createElement)(this.getTemplate());
     }
     return this.element;
   }
@@ -642,31 +642,34 @@ var __webpack_exports__ = {};
   \*********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_render_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/render.js */ "./src/render.js");
-/* harmony import */ var _presenter_render_presenter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./presenter/render-presenter.js */ "./src/presenter/render-presenter.js");
+/* harmony import */ var _presenter_trip_presenter_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./presenter/trip-presenter.js */ "./src/presenter/trip-presenter.js");
 /* harmony import */ var _view_sort_view_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./view/sort-view.js */ "./src/view/sort-view.js");
+/* harmony import */ var _view_create_new_form_view_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./view/create-new-form-view.js */ "./src/view/create-new-form-view.js");
+/* harmony import */ var _view_edit_form_view_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./view/edit-form-view.js */ "./src/view/edit-form-view.js");
+/* harmony import */ var _view_filter_view_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./view/filter-view.js */ "./src/view/filter-view.js");
+/* harmony import */ var _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./view/point-view.js */ "./src/view/point-view.js");
 
 
 
-/*import CreateNewFormView from './view/create-new-form-view.js';
-import EditFormView from './view/edit-form-view.js';
-import FilterView from './view/filter-view.js';
-import PointView from './view/point-view.js';*/
 
-const sortElement = document.querySelector('.trip-main');
-/*const createNewFormElement = document.querySelector('.trip-events__item');
-const editElement = document.querySelector('.trip-events__item');
+
+
+
+const sortElement = document.querySelector('.trip-events');
+const createNewFormElement = document.querySelector('.trip-events');
+const editElement = document.querySelector('.trip-events');
 const filterElement = document.querySelector('.trip-controls__filters');
-const pointElement = document.querySelector('.trip-events');*/
-
+const pointElement = document.querySelector('.trip-events');
 (0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_sort_view_js__WEBPACK_IMPORTED_MODULE_2__["default"](), sortElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.AFTERBEGIN);
-/*render(new CreateNewFormView(), createNewFormElement, RenderPosition.AFTERBEGIN);
-render(new EditFormView(), editElement, RenderPosition.AFTERBEGIN);
-render(new FilterView(), filterElement, RenderPosition.AFTERBEGIN);
-render(new PointView(), pointElement, RenderPosition.AFTERBEGIN);*/
-
-_presenter_render_presenter_js__WEBPACK_IMPORTED_MODULE_1__["default"].init();
+(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_create_new_form_view_js__WEBPACK_IMPORTED_MODULE_3__["default"](), createNewFormElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
+(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_edit_form_view_js__WEBPACK_IMPORTED_MODULE_4__["default"](), editElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.AFTEREND);
+(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_filter_view_js__WEBPACK_IMPORTED_MODULE_5__["default"](), filterElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.AFTERBEGIN);
+(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
+(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
+(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
+_presenter_trip_presenter_js__WEBPACK_IMPORTED_MODULE_1__["default"].init();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle.e935ccd2ee9c1650e1af.js.map
+//# sourceMappingURL=bundle.884027cc928ec3e93b11.js.map
