@@ -256,15 +256,15 @@ __webpack_require__.r(__webpack_exports__);
 class TripPresenter {
   pointComponent = new _view_point_view_js__WEBPACK_IMPORTED_MODULE_5__["default"]();
   constructor({
-    eventsContainer
+    contentContainer
   }) {
-    this.eventsContainer = eventsContainer;
+    this.contentContainer = contentContainer;
   }
   init() {
-    (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_sort_view_js__WEBPACK_IMPORTED_MODULE_1__["default"](), this.eventsContainer);
-    (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(this.pointComponent, this.eventsContainer);
+    (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_sort_view_js__WEBPACK_IMPORTED_MODULE_1__["default"](), this.contentContainer);
+    (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(this.pointComponent, this.contentContainer);
     (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_edit_form_view_js__WEBPACK_IMPORTED_MODULE_3__["default"](), this.pointComponent.getElement());
-    (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_filter_view_js__WEBPACK_IMPORTED_MODULE_4__["default"](), this.eventsContainer);
+    (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_filter_view_js__WEBPACK_IMPORTED_MODULE_4__["default"](), this.contentContainer);
     for (let i = 0; i < 3; i++) {
       (0,_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_5__["default"](), this.pointComponent.getElement());
     }
@@ -953,22 +953,22 @@ const sortElement = document.querySelector('.trip-events');
 const createNewFormElement = document.querySelector('.trip-events');
 const editElement = document.querySelector('.trip-events');
 const filterElement = document.querySelector('.trip-controls__filters');
-const pointElement = document.querySelector('.trip-events');
+const pointsContainerElement = document.querySelector('.trip-events');
 const pointModel = new _model_points_model_js__WEBPACK_IMPORTED_MODULE_7__["default"]();
 const tripPresenter = new _presenter_trip_presenter_js__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  contentContainer: pointElement,
+  contentContainer: pointsContainerElement,
   pointModel
 });
 (0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_sort_view_js__WEBPACK_IMPORTED_MODULE_2__["default"](), sortElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.AFTERBEGIN);
 (0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_create_new_form_view_js__WEBPACK_IMPORTED_MODULE_3__["default"](), createNewFormElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
 (0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_edit_form_view_js__WEBPACK_IMPORTED_MODULE_4__["default"](), editElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.AFTEREND);
 (0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_filter_view_js__WEBPACK_IMPORTED_MODULE_5__["default"](), filterElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.AFTERBEGIN);
-(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
-(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
-(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
+(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointsContainerElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
+(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointsContainerElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
+(0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointsContainerElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
 tripPresenter.init();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle.73487befeba17d91cb8e.js.map
+//# sourceMappingURL=bundle.e1d48cb9079d294ae2e7.js.map
