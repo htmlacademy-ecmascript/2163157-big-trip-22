@@ -23,7 +23,7 @@ const mockOffers = [
         price: '5',
       },
       {
-        id:'14',
+        id:'15',
         title: 'Travel by train',
         price: '5',
       }

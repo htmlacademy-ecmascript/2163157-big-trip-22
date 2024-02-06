@@ -30,5 +30,4 @@ render(new PointView(), pointElement, RenderPosition.BEFOREEND);
 render(new PointView(), pointElement, RenderPosition.BEFOREEND);
 render(new PointView(), pointElement, RenderPosition.BEFOREEND);
 
-TripPresenter.init();
 tripPresenter.init();
