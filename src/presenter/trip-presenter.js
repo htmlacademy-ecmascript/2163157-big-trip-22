@@ -25,4 +25,5 @@ export default class TripPresenter {
 
     render(new CreateNewFormView(), this.pointComponent.getElement());
   }
+
 }
