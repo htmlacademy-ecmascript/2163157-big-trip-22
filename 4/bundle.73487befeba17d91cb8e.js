@@ -95,7 +95,7 @@ const mockOffers = [{
     title: 'Choose seats',
     price: '5'
   }, {
-    id: '14',
+    id: '15',
     title: 'Travel by train',
     price: '5'
   }]
@@ -966,10 +966,9 @@ const tripPresenter = new _presenter_trip_presenter_js__WEBPACK_IMPORTED_MODULE_
 (0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
 (0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
 (0,_src_render_js__WEBPACK_IMPORTED_MODULE_0__.render)(new _view_point_view_js__WEBPACK_IMPORTED_MODULE_6__["default"](), pointElement, _src_render_js__WEBPACK_IMPORTED_MODULE_0__.RenderPosition.BEFOREEND);
-_presenter_trip_presenter_js__WEBPACK_IMPORTED_MODULE_1__["default"].init();
 tripPresenter.init();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle.749014acf5eb58ad4d49.js.map
+//# sourceMappingURL=bundle.73487befeba17d91cb8e.js.map
