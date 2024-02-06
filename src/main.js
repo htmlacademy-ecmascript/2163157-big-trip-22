@@ -13,12 +13,12 @@ const sortElement = document.querySelector('.trip-events');
 const createNewFormElement = document.querySelector('.trip-events');
 const editElement = document.querySelector('.trip-events');
 const filterElement = document.querySelector('.trip-controls__filters');
-const pointElement = document.querySelector('.trip-events');
+const pointsContainerElement = document.querySelector('.trip-events');
 
 
 const pointModel = new PointModel();
 const tripPresenter = new TripPresenter({
-  contentContainer: pointElement,
+  contentContainer: pointsContainerElement,
   pointModel,
 });
 
@@ -26,8 +26,8 @@ render(new SortView(), sortElement, RenderPosition.AFTERBEGIN);
 render(new CreateNewFormView(), createNewFormElement, RenderPosition.BEFOREEND);
 render(new EditFormView(), editElement, RenderPosition.AFTEREND);
 render(new FilterView(), filterElement, RenderPosition.AFTERBEGIN);
-render(new PointView(), pointElement, RenderPosition.BEFOREEND);
-render(new PointView(), pointElement, RenderPosition.BEFOREEND);
-render(new PointView(), pointElement, RenderPosition.BEFOREEND);
+render(new PointView(), pointsContainerElement, RenderPosition.BEFOREEND);
+render(new PointView(), pointsContainerElement, RenderPosition.BEFOREEND);
+render(new PointView(), pointsContainerElement, RenderPosition.BEFOREEND);
 
 tripPresenter.init();

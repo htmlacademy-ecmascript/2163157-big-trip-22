@@ -8,16 +8,16 @@ import PointView from '../view/point-view.js';
 export default class TripPresenter {
   pointComponent = new PointView();
 
-  constructor({eventsContainer}) {
-    this.eventsContainer = eventsContainer;
+  constructor({contentContainer}) {
+    this.contentContainer = contentContainer;
   }
 
 
   init() {
-    render(new SortView(), this.eventsContainer);
-    render(this.pointComponent, this.eventsContainer);
+    render(new SortView(), this.contentContainer);
+    render(this.pointComponent, this.contentContainer);
     render(new EditFormView(), this.pointComponent.getElement());
-    render(new FilterView(), this.eventsContainer);
+    render(new FilterView(), this.contentContainer);
 
     for (let i = 0; i < 3; i++) {
       render(new PointView(), this.pointComponent.getElement());
